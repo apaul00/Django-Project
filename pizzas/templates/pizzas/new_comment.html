@@ -5,13 +5,13 @@
 
 <p>Add a comment</p>
 
-<form action="{% url 'pizzas:new_pizza' %}" method ='post'>
+<form action="{% url 'pizzas:new_comment' %}" method='post'>
     {% csrf_token %}
-    
+
     {{ form.as_p }}
 
     <button name="post comment">Add comment</button>
-    </form>
+</form>
 
-    
+
 {% endblock content %}

@@ -17,10 +17,10 @@ class Topping(models.Model):
     def __str__ (self):
         return f"{self.topping_name[:50]}..."
 
-class Comment(models.Model):
-    comments = models.CharField(max_length = 100)
-    def __str__(self):
-        return self.comments
 
-
+class Reviews(models.Model):
+    topping = models.ForeignKey(Topping, on_delete=models.CASCADE)
+    reviews = models.TextField()
+    def __str__ (self):
+        return f"{self.comments[:50]}..."
         
