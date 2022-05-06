@@ -9,8 +9,9 @@
     {% for p in pizzas %}
 
     <li>
-    <a href="{% url 'pizzas:pizza' p.id %}"> {{ p }}</a> 
-    </li> 
+        <a href="{% url 'pizzas:pizza' p.id %}"> {{ p }}</a>
+
+    </li>
     {% empty %}
     <li> No Pizzas Available... </li>
     {% endfor %}

@@ -7,10 +7,14 @@
 </p>
 
 <ul>
+    <img src="https://laurenslatest.com/wp-content/uploads/2021/01/margherita-pizza-recipe-04-500x500.jpg" alt="pizza"
+        style="width:250px;height:250px;">
     {% for t in toppings %}
     <li>
         <p> {{ t }}</p>
+
     </li>
+
     {% empty %}
     <li>No availabilities...</li>
     {% endfor %}
